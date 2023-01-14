@@ -28,7 +28,7 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
+//        intended  هي الصفحه الي قبل ما يعمل لوج ان
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
